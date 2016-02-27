@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+
+
+body {
+  font-family: "Helvetica Neue";
+  margin: 40px auto;
+  width: 960px;
+  min-height: 1000px;
+}
+
+footer {
+  padding: 2em 0 1em 0;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 96px;
+  margin-top: .3em;
+  margin-bottom: 0;
+}
+
+h1 + h2 {
+  margin-top: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+h1, h2 {
+  font-family: "Yanone Kaffeesatz";
+  text-rendering: optimizeLegibility;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.barchart_svg {
+	border:1px solid lightgrey;	
+}
+
+div.tooltip {	
+  position: absolute;			
+  text-align: center;			
+  width: 150px;					
+  height: 30px;					
+  padding: 5px;				
+  font: 16px sans-serif;		
+  background: lightsteelblue;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;			
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
